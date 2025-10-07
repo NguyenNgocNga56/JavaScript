@@ -9,7 +9,7 @@ function handleReverse() {
   const number = parseInt(input, 10);
   const output = document.getElementById('outputHere');
   if (isNaN(number)) {
-    output.innerText = "⚠️ Vui lòng nhập một số hợp lệ.";
+    output.innerText = "Vui lòng nhập một số hợp lệ.";
     output.style.color = "red";
     return;
   }
