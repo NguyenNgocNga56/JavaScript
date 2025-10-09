@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bài 25 - Thực đơn</title>
+    <link rel="stylesheet" href="25.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>THỰC ĐƠN</h2>
+    <form id="menuForm">
+        <div class="menu-row">
+        <div class="menu-section">
+            <h3>Món ăn</h3>
+            <select id="foodList" multiple size="6">
+            <option value="Bún bò">Bún bò - 30.000đ</option>
+            <option value="Hủ tiếu">Hủ tiếu - 30.000đ</option>
+            <option value="Bánh canh">Bánh canh - 30.000đ</option>
+            <option value="Phở bò">Phở bò - 30.000đ</option>
+            <option value="Nui">Nui - 30.000đ</option>
+            <option value="Mì cay(Best Seller)">Mì cay (Best Seller) - 60.000đ</option>
+            </select>
+        </div>
+        <div class="menu-section">
+            <h3>Nước uống</h3>
+            <select id="drinkList" multiple size="6">
+            <option value="Cà phê đá">Cà phê đá - 15.000đ</option>
+            <option value="Cà phê sữa">Cà phê sữa - 15.000đ</option>
+            <option value="Matcha Latte">Matcha Latte - 25.000đ</option>
+            <option value="Sting">Sting - 15.000đ</option>
+            <option value="Soda sữa hột gà">Soda sữa hột gà - 15.000đ</option>
+            <option value="Cam ép">Cam ép - 15.000đ</option>
+            </select>
+        </div>
+        <div class="menu-section time-section">
+            <h3>Thời điểm</h3>
+            <label><input type="radio" name="time" value="day" checked /> Ban ngày</label>
+            <label><input type="radio" name="time" value="night" /> Ban đêm</label>
+        </div>
+        </div>
+        <button type="button" onclick="tinhTien()">Tính tiền</button>
+    </form>
+    <h3>Kết quả</h3>
+    <table id="resultTable">
+        <thead>
+            <tr><th>Món đã chọn</th><th>Giá</th></tr>
+        </thead>
+        <tbody id="billBody"></tbody>
+        <tfoot>
+        <tr>
+            <td><strong>Tổng tiền</strong></td>
+            <td id="tongTien">0 đồng</td>
+        </tr>
+        </tfoot>
+    </table>
+    </div>
+    <script src="25.js"></script>
+</body>
+</html>

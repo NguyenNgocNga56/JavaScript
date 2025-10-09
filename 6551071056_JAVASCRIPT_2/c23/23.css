@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+table {
+    border: 2px solid blue;
+    background-color: #ffe;
+    padding: 10px;
+}
+input {
+    width: 150px;
+}
+button {
+    margin-top: 10px;
+}

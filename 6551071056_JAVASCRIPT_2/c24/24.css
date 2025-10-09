@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+input, select {
+    margin: 5px;
+}
+p {
+    font-weight: bold;
+    color: darkblue;
+}

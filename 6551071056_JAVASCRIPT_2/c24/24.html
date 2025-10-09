@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 24 - Xem thứ trong tuần</title>
+    <link rel="stylesheet" href="24.css">
+</head>
+<body>
+    <form>
+        Ngày <input type="number" id="ngay" value="12" min="1" max="31">
+        Tháng Select: 
+        <select id="thang">
+            <script>
+                for (let i = 1; i <= 12; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>
+        </select>
+        Năm <input type="number" id="nam" value="2015">
+        <button type="button" onclick="xuatThu()">Xuất thứ</button>
+        <p id="output"></p>
+    </form>
+    <script src="24.js"></script>
+</body>
+</html>

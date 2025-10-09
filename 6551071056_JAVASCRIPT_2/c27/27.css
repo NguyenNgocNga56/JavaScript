@@ -1,0 +1,13 @@
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  width: 60%;
+  font-family: Arial;
+}
+input {
+  width: 100px;
+  padding: 5px;
+}
+button {
+  padding: 5px 10px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>JS DOM paragraph style</title>
+	</head>
+	<body>
+		<p id="text">JavaScript Exercises - w3resource</p>
+		<form onsubmit="changeStyle(event)">
+			<input type="submit" value="Submit">
+		</form>
+		<script>
+			function changeStyle(event) {
+				event.preventDefault();
+				const para = document.getElementById("text");
+				para.style.fontSize = "22px";
+				para.style.fontFamily = "Tahoma, sans-serif";
+				para.style.color = "green";
+			}
+		</script>
+	</body>
+</html>
